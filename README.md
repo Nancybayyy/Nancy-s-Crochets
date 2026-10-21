@@ -16,9 +16,11 @@ Place product photos in `assets/` and set each entry’s `image` and `imageAlt` 
 
 The contact form validates entries in the browser but does not send or store them. Product enquiry buttons prefill the contact form; they do not create an order. Connect a real business email or form service before accepting enquiries. A WhatsApp link is omitted because no business number was supplied. No payment or checkout is implemented.
 
-## Deploy
+## Deploy to Render
 
-Upload the site files and `assets/` folder to any static hosting provider. GitHub Pages, Netlify, and Cloudflare Pages can serve this site without a build command. Configure the provider to publish the project root. Add real product photos, prices, availability, and a working contact endpoint before launch.
+The included `render.yaml` defines a Render static site that publishes the repository root from the `main` branch. There is no build step or dependency installation.
+
+To create the site, sign in to Render, choose **New > Blueprint**, connect `Nancybayyy/Nancy-s-Crochets`, and deploy the Blueprint. Render will assign an `onrender.com` URL and automatically redeploy future pushes to `main`. If this repository is already connected to a Render Static Site, the same settings can be entered in its dashboard instead. Add real product photos, prices, availability, and a working contact endpoint before launch.
 
 ## Bundled photo credits
 
